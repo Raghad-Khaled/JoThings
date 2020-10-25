@@ -1,0 +1,182 @@
+/* Vedio*/
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+nav{
+    font-family: 'Open Sans', sans-serif;
+    font-size: x-large;
+    font-weight: lighter;
+}
+.nav-item{
+    color: rgba(0, 0, 0, 0.705);
+    
+}
+.nav-item:hover{
+    color: black;
+}
+.navbar-text a{
+text-decoration: none;
+}
+
+.row a{
+    text-decoration: none;
+}
+.main{
+    margin-top: 7%;
+}
+.block{
+    
+    background-color: white;
+    font-size: x-large;
+    margin: 5% 0%;
+    padding: 5%;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+}
+.block2{
+    background-color: white;
+    font-size: x-large;
+    margin: 2% 0%;
+    padding: 2%;
+    text-align: center;
+    border-radius: 30px;
+    color: black;
+}
+.block:hover{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.699);
+    
+}
+
+.banner{
+    margin-top: 4%;
+}
+
+#window{
+    background-color:#2776ec93;
+}
+#window:hover{
+    background-color: #2777ec;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+  
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    margin-left: 95%;
+    font-size: 38px;
+    font-weight: bold;
+    
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.form-group{
+    margin-left: 10px;
+}
+hr{
+    width:100%
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .block{
+    
+        
+        padding: 2%;
+        font-size: x-large;
+        margin: 1.7% auto;
+        width: 70%;
+        border-radius: 0px;
+        background-color: rgba(255, 255, 255, 0.808);
+        
+    }
+    .block2{
+        padding: 1.5%;
+        font-size: x-large;
+        margin: 1% auto;
+        width: 70%;
+        border-radius: 0px;
+    }
+    .modal-content {
+       
+        width: 90%;
+    }
+    .fullscreen-bg {
+        background: url('../images/abstract_line1_Moment.jpg') center center / cover no-repeat;
+      }
+    
+      .fullscreen-bg__video {
+        display: none;
+    }
+    #sideimg{
+    display: none;
+    }
+   .icon{
+       display: none;
+   }
+}
+@media only screen and (max-width: 1040px) {
+    .banner{
+        display: none;
+    }
+}
+@media (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+      height: 300%;
+      top: -100%;
+    }
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+      width: 300%;
+      left: -100%;
+    }
+  }
+  
